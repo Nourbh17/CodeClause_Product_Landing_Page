@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css" />
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header> 
+      <div id="menu-bar" class="fa-solid fa-bars"></div>
+        <a href="#" class="header__logo">
+            <img class="header__img" src="images/logo.png" alt="" />
+            <p class="header__title">TRAVEL TUNISIA</p>
+          </a>
+          <nav  class="navbar">
+          <div class="navbar__links">
+            <a href="#home"> Home</a>
+            <a href="#book"> Book</a>
+            <a href="#packages"> Packages</a>
+            <a href="#destination"> Top Destinations</a>
+          </div>
+          </nav>
+          <div class="header__icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        <i class="fa-regular fa-user" id="login-btn"></i>
+          </div>
+          <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here ...">
+            <img src="images/search-icon.svg" alt="" />
+          </form>
+    </header>
+    <div class="login-form-container container">
+      <i class="fa-solid fa-xmark" id="form-close"> </i>
+      <form action="" id="form">
+       <div class="header2"> <img class="header__img" src="images/logo.png" alt="" />
+        <h3>Sign in</h3>
+      </div> 
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" class="btn" value="Sign in" />
+        <input type="checkbox" id="remember" />
+        <label for="remember"> <strong style="color: white;"> Remember Me</strong></label>
+        <p>Forget Password? <a href="#"><strong> Click Here</strong> </a></p>
+        <p>Don't Have An Account <a href="#"> <strong> Sign up</strong></a></p>
+      </form>
+    </div>
+
+
+    <section class="home container" id="home">
+      <div class="home__content">
+        <h1 class="home__title">
+          YOU'RE
+          <br />
+          <span>NOT</span>
+          <br />
+          DREAMING
+        </h1>
+        <p class="home__text">Discover New Places With Us, Adventure Awaits</p>
+        <a href="#" class="btn">Discover More</a>
+      </div>
+      <div class="home__controls">
+        <svg class="prev"data-id="video"xmlns="http://www.w3.org/2000/svg"width="86.742"height="73.216"viewBox="0 0 86.742 73.216">
+        <path d="M22.897 73.216L0 48.158 44.032 0v6.983L27.159 25.498l17.248 18.94L84.897 0v6.985L68.533 24.942l18.209 19.961v7.01L65.35 28.435 47.593 47.931l16.681 18.304v6.981l-40.299-44.22L6.468 48.207l16.429 18.028z"></path>
+        </svg>
+        <div class="big-text">Djerba</div>
+        <svg class="next"data-id="video"xmlns="http://www.w3.org/2000/svg"width="86.742" height="73.216" viewBox="0 0 86.742 73.216">
+          <path d="M63.845 73.216l22.897-25.058L42.71 0v6.983l16.873 18.515-17.248 18.94L1.845 0v6.985l16.364 17.957L0 44.903v7.01l21.392-23.478 17.757 19.496-16.681 18.304v6.981l40.299-44.22 17.507 19.211-16.429 18.028z"></path>
+        </svg>
+      </div>
+      <div class="home__videos">
+        
+        
+         <!--<video src="images/Djerba-vd.mp4"class="video live"id="video1"autoplay muted></video>
+       <video src="images/Tabarka-vd.mp4"class="video" id="video2" autoplay muted></video>
+        <video src="images/Tozeur-vd.mp4"class="video" id="video2" autoplay muted></video>-->
+      
+      </div>
+    </section>
+
+<section class="book container" id="book"> 
+  <h2 class="heading">  
+    <span>b</span>
+    <span>o</span>
+    <span>o</span>
+    <span>k</span>
+    <span class="space"></span>
+    <span>n</span>
+    <span>o</span>
+    <span>w</span>
+  </h2>
+  <div class="row">
+    <div class="book__row__image">
+      <img src="images/travel-1.jpg" alt="">
+    </div>
+    <div class="book__row--form">
+     <div class="inputBox">
+      <h3> Where To</h3>
+      <input type="text" placeholder="place name" />
+     </div>
+     <div class="inputBox">
+      <h3>How Many</h3>
+      <input type="number" placeholder="number of gusts" />
+     </div>
+     <div class="inputBox">
+      <h3> Arrivals</h3>
+      <input type="date"  />
+     </div>
+     <div class="inputBox">
+      <h3> Leaving</h3>
+      <input type="date"  />
+     </div>
+     <input type="submit" class="btn"  value="Book Now" />
+    </div>
+    
+     </div>
+
+</section>
+
+<section class="Packages container" id="packages">
+<h2 class="heading">
+<span>P</span>
+<span>A</span>
+<span>C</span>
+<span>K</span>
+<span>A</span>
+<span>G</span>
+<span>E</span>
+<span>S</span>
+</h2>
+<div class="packages__parent">
+  <div class="box">
+    <div class="packages__box--image">
+      <img src="images/Ain Draham.jpg" alt="" />
+    </div>
+    <div class="packages__box--content-item">
+      <h4> <i class="fas fa-map-marker-alt"></i> Aïn Draham journey</h4>
+      <p> Spend a stay in Aïn Draham: it is an invitation to discover the immense forest that covers the Khroumirie massif. Village with red roofs, calm and authentic,
+        it is an ideal starting point for walks and hikes.</p>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <span class="rate">5</span>
+      </div>
+      <div class="price">
+        200DT
+        <span>250DT</span>
+      </div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="packages__box--image">
+      <img src="images/Antara-Tozeur.jpg" alt="" />
+    </div>
+    <div class="packages__box--content-item">
+      <h4> <i class="fas fa-map-marker-alt"></i> Antara Tozeur</h4>
+      <p> A modern blend of Moorish and Berber architecture, Anantara Tozeur is a true desert sanctuary, with desert tones and desert views. 
+        Enjoy the Saharan sun on your private terrace, then retreat inside, spacious and cool.</p>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <span class="rate">5</span>
+      </div>
+      <div class="price">
+        1200DT
+        <span>1800DT</span>
+      </div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="packages__box--image">
+      <img src="images/Djerba.jpg" alt="" />
+    </div>
+    <div class="packages__box--content-item">
+      <h4> <i class="fas fa-map-marker-alt"></i> Djerba journey</h4>
+      <p> Welcome to Djerba, the pearl of the Mediterranean! This charming Tunisian island is full of treasures to discover. Whether you are a culture lover, a 
+        fan of pristine beaches or an adventurer looking for new experiences, Djerba has everything you need.</p>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <span class="rate">5</span>
+      </div>
+      <div class="price">
+        1500DT
+        <span>2000DT</span>
+      </div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="packages__box--image">
+      <img src="images/Tozeur.jpg" alt="" />
+    </div>
+    <div class="packages__box--content-item">
+      <h4> <i class="fas fa-map-marker-alt"></i> Sahara discovery</h4>
+      <p> Magic of light, invigorating air, infinite spaces and the pure nudity of desert landscapes… 
+        The call of the Sahara resonates all the stronger as modern life becomes more cramped and oppressive.</p>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <span class="rate">5</span>
+      </div>
+      <div class="price">
+        700DT
+        <span>800DT</span>
+      </div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="packages__box--image">
+      <img src="images/Tabarka-2009_181.jpg" alt="" />
+    </div>
+    <div class="packages__box--content-item">
+      <h4> <i class="fas fa-map-marker-alt"></i> Tabraka </h4>
+      <p> The small town of Tabarka is located in a natural site of great beauty. All around, there are pine woods, rocky coves and belvederes offering a panoramic view of superb landscapes. 
+        Opposite, the old Genoese Fort proudly watches over the small seaside resort, its fishing port and its marina.</p>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <span class="rate">5</span>
+      </div>
+      <div class="price">
+        900DT
+        <span>1050DT</span>
+      </div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="packages__box--image">
+      <img src="images/sidi.jpg" alt="" />
+    </div>
+    <div class="packages__box--content-item">
+      <h4> <i class="fas fa-map-marker-alt"></i> Tunis journey</h4>
+      <p> Tourist destinations in Tunis : Carthage / Sidi Bousaid / Medina of Tunis / Mosque of zitouna / Goulette</p>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <span class="rate">5</span>
+      </div>
+      <div class="price">
+        325DT
+        <span>350DT</span>
+      </div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="destination container"  id="destination">
+  <h2 class="heading">
+    
+    <span class="space"></span>
+   
+    </h2>
+<div class="destination__parent"> 
+  <div class="destination__content">
+    <h2 class="title"> Djerba</h2>
+    <h3 class="title"> Must visit summer Destinations</h3>
+    <p> Djerba is an island in the Mediterranean Sea with an area of 514 km2 (25 by 20 kilometers and a coastline of 150 kilometers) and located east of the eastern coast of Tunisia. The largest island on the coast of North Africa, located to the south-east of the Gulf of Gabès 
+      which it borders by its eastern and northern coastsnote 1, Djerba closes the Gulf of Boughrara to the south.
+    </p>
+    <a href="#" class="btn"> Read More</a>
+  </div>
+  <div class="destination__image">
+   <!--<img src="images/egypt2.jpg" alt="" /> -->
+   </div>
+</div>  
+</section>
+<br/>
+<!--<footer class="footer">
+
+  <div class="containerr">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online booking</h4>
+        <ul>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Houses</a></li>
+          <li><a href="#">Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>-->
+   <footer>
+    <div class="container">
+      <div class="sec about us">
+        <h2> About Us</h2>
+        <p> Travel Tunisia is a Tunisian travel agency that 
+            specializes in organizing trips and excursions 
+            Tunisia. They offer a wide range of opportunities 
+            for travelers to explore and discover the cities of 
+            this magnificent country. From historical sites to 
+            cultural experiences and natural wonders.
+        </p>
+        <ul class="sci">
+          <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2> Support</h2>
+        <ul>
+          <li><a href="#"> FAQ</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Help</a></li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2> Booking</h2>
+        <ul>
+          <li><a href="#"> Packages</a></li>
+          <li><a href="#"> Hotels</a></li>
+          <li><a href="#"> Programs</a></li>
+          <li><a href="#"> Visits</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h2> Contact Us</h2>
+        <ul class="info">
+          <li>
+            <span> <i class="fa-solid fa-phone"></i></span> <p> <a href="tel:+21699999999">+216 99 999 999</a></p>
+          </li>
+          <li>
+            <span> <i class="fa-solid fa-envelope"></i></span> <p> <a href="mailto:travelTunisia@gmail.com">travelTunisia@gmail.com</a></p>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+   </footer>
+   <div class="copyrightText">
+    <p> Copyright <i class="fa-regular fa-copyright"></i>2023 Travel Tunisia. All Rights Reserved </p>
+   </div>
+<script src="main.js"></script>
+</body>
+</html>
